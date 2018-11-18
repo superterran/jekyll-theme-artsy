@@ -1,0 +1,47 @@
+---
+title: Shop
+layout: page
+description: Purchase artwork directly from the artist!
+category: services
+active: shop
+header-img: media/servicesbanner.jpg
+---
+
+{% for image in site.static_files %}
+{% assign price = false %}
+{% assign title = "" %}
+{% assign url = "#" %}
+{% if image.path contains 'art/' or image.path contains 'media/' %}				
+    {% unless image.path contains 'thumbs' %}
+        {% assign rendered = image.relative_path %}
+        {% capture imagepath %}{{ image.path | replace_first: '/', '' }}{% endcapture %}
+        {% for post in site.art %}
+            {% if image.path contains post.image %}	
+                {% if post.price %}{% assign price = post.price %}{% endif %}
+                {% assign title = post.title %}
+                {% assign url = post.url %}
+            {% endif %}
+        {% endfor %} 
+        {% if price != false %}
+        {% if rendered != image.path %}	
+            {% capture thumbsrc %}{% thumbnail imagepath 800x800 %}{% endcapture %}
+            {% capture fullsrc %}{% thumbnail imagepath 1900x1900 %}{% endcapture %}		
+
+          
+            <div class="shop item">
+                <a href="{{ url }}"><img src="/{{ thumbsrc | replace: "<img src='", "" |  replace: "' />", "" }}" /></a>
+                <b><a href="{{ url }}">{{ title }}</a></b>
+                <i><a href="{{ url }}">${{ price }}</a></i>
+            </div>
+
+            {% endif %}
+
+        {% endif %}				
+    {% endunless %}
+{% endif %}
+{% endfor %}
+
+
+<div id="header-booknow">
+    {% include paypal/booknow.html %}
+</div>

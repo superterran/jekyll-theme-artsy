@@ -1,0 +1,11 @@
+
+{{ include.offering }}
+
+<div class="services-one">
+    {% for post in site.services %}
+        {% if post.offering == include.type %}
+                <h1>{{ post.title }}</h2>
+                <p>{{ post.content }}</p>
+        {% endif %}
+    {% endfor %}
+</div>

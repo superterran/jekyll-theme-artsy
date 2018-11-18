@@ -1,0 +1,92 @@
+---
+title: Trina is Artsy
+timezone: UTC
+collections:
+  art:
+    title: Art
+    output: true
+  posts:
+    title: Posts
+    output: true
+  services:
+    title: Services
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: trinaisartsy@gmail.com
+description: ''
+baseurl: 
+facebook_username: trinaisartsy
+twitter_username: trina_is_artsy
+instagram_username: trinaisartsy
+gtmid: GTM-N9RC8QC
+flickr_username: trinaisartsyfartsy
+discus_shortname: trinaisartsy
+tinyletter_id: trinaisartsy
+paypal: ER3YV7DCSRWZU
+share: true
+excerpt_separator: "<!--more-->"
+header-img: art/the_usual_suspects__by_space_monkey.jpg
+owner:
+  name: Trina
+  avatar: avatar.png
+  favicon: favicon.ico
+  info: I'm a visual artist, writer, teacher, and so much more.
+comments:
+  provider: disqus
+  disqus:
+    short_name: trinalyn
+nav:
+- GALLERY: "/art/"
+- SHOP: "/shop/"
+- BLOG: "/blog/"
+- TUTORIALS: "/tutorials/"
+- SERVICES: "/services/"
+- CONTACT: "/contact/"
+translations:
+  permalink: "/404.html"
+destination: "./_site"
+port: 80
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+categories_path: "/blog/category/"
+tags_path: "/blog/tag/"
+plugins:
+- jekyll-paginate-v2
+- jekyll/tagging
+exclude:
+- less
+- node_modules
+- Gruntfile.js
+- package.json
+- README.md
+pagination:
+  enabled: true
+  debug: false
+  collection: posts
+  sort_reverse: true
+  per_page: 3
+  permalink: "/page/:num/"
+tag_page_layout: tag_page
+tag_page_dir: tag
+sitemap:
+  file: "/sitemap.xml"
+  exclude:
+  - "/atom.xml"
+  - "/feed.xml"
+  - "/feed/index.xml"
+  include_posts:
+  - "/writing/"
+  change_frequency_name: change_frequency
+  priority_name: priority
+prose:
+  rooturl: _posts/
+  siteurl: https://trina.coffee
+  media: media
+  ignore:
+  - index.md
+  - _config.yml
+  - "/_layouts"
+  - "/_includes"

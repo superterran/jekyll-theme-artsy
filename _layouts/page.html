@@ -2,4 +2,22 @@
 layout: default
 ---
 
-{{ content }}
+{% include header.html %}
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+
+		{{ content }}
+
+		{% if page.offering-type %}
+			{% include services-offering.html type=page.offering-type %}
+		{% endif %}
+	
+		{% if page.cta == 'booknow' %}
+			<center>{% include paypal/booknow.html %}</center>
+		{% elsif page.cta == 'buynow' %}
+			<center>{% include paypal/buynow.html %}</center>
+		{% endif %}
+	</div>
+</div>

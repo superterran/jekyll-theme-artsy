@@ -1,0 +1,11 @@
+<ul class="services-three">
+    {% for page in site.services %}
+        {% if page.group == include.group %}
+        <li>
+            <a href="{{ page.url }}"><img class="round" src="/{% if page.img %}{{ page.img }}{% else %}{{ page.header-img }}{% endif %}" /></a>
+            <h2>{{ page.title }}</h2><p style="display: block; min-height: 50px">{{ page.description }}</p>
+            <a href="{{ page.url }}">Learn More</a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>

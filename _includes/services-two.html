@@ -1,0 +1,14 @@
+<div class="services-two">
+    {% for page in site.services %}
+        {% if page.group == include.group %}
+        <ul>
+            <li>
+                <h3>{{ page.title }}</h3>
+                <img class="round" src="/{{ page.img }}" alt="{{ page.title }}" />
+                <p>{{ page.excerpt }}</p>
+                <center><a href="{{ page.url }}">Learn More</a></center>
+            </li>
+        </ul>
+        {% endif %}
+    {% endfor %}
+</div>

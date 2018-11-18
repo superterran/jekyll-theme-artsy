@@ -1,4 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gemspec
+gem "jekyll"
+gem 'jekyll-tagging'
+gem 'mini_magick'
+gem 'jekyll-paginate-v2'

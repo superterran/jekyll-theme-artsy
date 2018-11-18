@@ -1,0 +1,8 @@
+<div class="services-testimonials">
+    {% for page in site.services %}
+        {% if page.group == include.group %}       
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.content }}</p>
+        {% endif %}
+    {% endfor %}            
+</div>
