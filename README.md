@@ -1,4 +1,5 @@
 # jekyll-theme-artsy
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-artsy.svg)](https://badge.fury.io/rb/jekyll-theme-artsy)
 
 * [Documentation](https://superterran.github.io/jekyll-theme-artsy/)
 
