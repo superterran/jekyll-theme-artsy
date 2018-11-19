@@ -4,6 +4,15 @@
 
 The easiest way to use is to connect with Prose, the theme comes bundled with a _prose.yml file that provides all the configurations needed for use.
 
+## Deploying to rubygems.org
+
+The following will push a new release live, be sure to tag and create a release in github!
+
+```
+$ gem build jekyll-theme-artsy.gemspec
+$ gem push jekyll-theme-artsy-0.1.9.gem
+```
+
 ## Local Development
 
 There's some work you just can't do on the web, for this we must build the site locally:
