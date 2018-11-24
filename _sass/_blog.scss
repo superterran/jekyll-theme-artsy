@@ -1,0 +1,168 @@
+
+article img, #post-content img {
+    padding: 15px; 
+  }
+  
+  article .small, #post-content .small {
+    max-width: 30%;
+  }
+  
+  article img.medium, #post-content img.medium  {
+    width: 50%;
+  }
+  
+  article .large img, #post-content .large img {
+    width: 70%;
+  }
+  
+  
+  article .full img, #post-content .full img {
+    width: 100%;
+  } 
+  
+  
+  @media screen and (max-width: 780px) {
+    article .small, #post-content .small, article .medium img, #post-content .medium img, article .large img, #post-content .large img 
+    {
+      clear: both;
+      width: 100%;
+      text-align: center;
+    }
+  
+  }
+  
+  
+  article .left, #post-content .left {
+    float: left;
+  }
+  
+  article img.center, #post-content img.center {
+    margin: 0 auto;
+  }
+  
+  
+  article .right, #post-content .right {
+    float: right;
+  }
+  
+  article .clear, #post-content .clear {
+    clear: all;
+  } 
+  
+  .fancytextborder {
+    margin-right:1em; text-shadow: -.025em -.025em 0 rgba(102, 0, 85, 0.75), .025em -.025em 0 rgba(102, 0, 85, 0.75), -.025em .025em 0 rgba(102, 0, 85, 0.75), .025em .025em 0 rgba(102, 0, 85, 0.75);
+  }
+  
+  
+  .newsletter {
+    background-color: #725377;
+    color: white;
+  }
+  
+  .newsletter #tlemail {
+    background-color: #e6d0e6;
+  }  
+  
+  .newsletter #submit {
+    background-color:#9c869c;
+  }
+  
+  #donate input {
+    width: 200px;
+  }
+  
+  #donate:hover {
+    opacity: .8;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    li #donate {
+      display: none;
+    }
+    .donate-outside #donate {
+      position: absolute;
+      top: 60px;
+      right: 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #donate {
+      display: block;
+    }
+    
+    .donate-outside #donate {
+      display: none;
+    }
+  
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  #headerwrapper {
+    background: no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    display: block;
+  }
+  
+  #headerwrapper .intro-header {
+  
+    background-color: rgba(118, 37, 126, 0.8);
+    
+  }
+  
+  
+  
+  .bloglist-header {
+  
+    /* border: 1px solid red; */
+    left: 0px;
+    right: 0px;
+    clear: both;
+    position: relative;
+    padding: 20px;
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+  }
+  
+  #post-content {
+    padding-bottom: 80px;
+  }
+  
+  .bloglist-header h2, .bloglist-header h3, .bloglist-header .meta {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  
+  .bloglist-header .meta {
+    color: #fff;
+  }
+  
+  ul#pager {
+    position: absolute;
+    display: block;
+    clear: both;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 100%;
+  }
+  #pager li {
+    float: center;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    
+  }
+  
+  .container {
+    overflow: hidden;
+  }  

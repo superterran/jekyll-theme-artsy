@@ -1,0 +1,37 @@
+
+.view-cart {
+    float: right; display: block; margin-top: 13px; width: 36px;
+  }
+  
+  .addtocart {
+    position: relative;
+    width: 320px;
+  }
+  
+  .addtocart .addtocart-button {
+    float: left;
+    width: 100%;
+  }
+  
+  .addtocart .addtocart-button:hover {
+    opacity: .7;
+  }
+  
+  .addtocart div {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 75px;
+    right: 40px;
+  }
+  
+  .addtocart h2 {
+    color: rgb(198, 157, 207);
+    margin-bottom: -10px;
+  }
+  
+  .addtocart sub {
+    font-size: 10pt;
+    font-style: italic;
+  
+  }

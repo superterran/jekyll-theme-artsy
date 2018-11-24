@@ -1,0 +1,14 @@
+.gallery {
+    min-height: 1000px;
+    img {
+        float: left;
+        margin: 20px 0;
+      max-height: 1100px;
+        width: 95%;
+    }
+}
+
+.gallery-col {
+    width: 50%;
+    float: left;
+}

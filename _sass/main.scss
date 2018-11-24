@@ -1,4 +1,7 @@
-body {
-    background-color: red;
-    color: silver;
-}
+@import '_common';
+@import '_blog';
+@import '_gallery';
+@import '_cart';
+@import '_shop';
+@import '_services';
+@import '_homepage'; 

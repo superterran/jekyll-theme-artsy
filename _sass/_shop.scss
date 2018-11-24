@@ -1,0 +1,55 @@
+.shop.item {
+    display: block;
+    width: 24%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .shop.item b, .shop.item i {
+    display: block;
+    clear: both;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  .shop.item img {
+    max-width: auto;
+    height: 300px;
+    margin: 5px auto;
+    padding-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  
+  @media screen and (max-width: 780px) {
+    .shop.item {
+      display: block;
+      width: 100%;
+      border: 1px solid #614961;
+      margin: 5px;
+      float: left;
+      text-align: center;
+      padding: 20px;
+    }
+    
+  }
+  
+  @media screen and (min-width: 780px) {
+    .productimg {
+      float: left;
+      width: 60%;
+    }
+  
+   p .img-responsive {
+      max-width: 40%;
+    }
+  
+  }
+  
+  .row h1, .row h2, .row h3, .row h4, .row h5, .row h6 {
+    clear: initial;
+  
+  }

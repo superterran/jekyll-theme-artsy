@@ -5,4 +5,4 @@ while inotifywait -qqre modify "./"; do
     bundle exec jekyll build
     cd /mnt/d/repos/artsy
     echo 'build complete!'
-done 
+done  

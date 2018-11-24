@@ -1,0 +1,162 @@
+
+#header-booknow {
+    position: absolute;
+    top: 60px;
+  }
+  
+  .services-testimonials h2 {
+    text-align: center;
+  }
+  .services-testimonials ul {
+    padding: 0px;
+  }
+  
+  .services-testimonials ul li {
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-style: italic;
+  }
+  .services-testimonials ul li li {
+    text-align: right;
+    font-weight: 800;
+    content: "By: ";
+    font-size: 18px;
+    font-style: bold;
+    margin-bottom: 40px;
+  }
+  
+  
+  .round {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid purple;
+  }
+  
+  .services-three {
+    padding: 0px;
+  }
+  .services-one h1, .services-one h2 {
+    text-align: center;
+  
+  }
+  
+  .services-one {
+    text-align: justify;
+    font-size: 16px;
+  }
+  
+  .services-one .round {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: -160px;
+  }
+  
+  .services-three li {
+    width: 33%;
+    float: left;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+  
+  }
+  
+  .services-three li h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  
+  .services-two ul {
+    padding: 0px;
+  }
+  
+  .services-two li {
+    width: 50%;
+    float: left;
+    padding: 5px;
+    list-style-type: none;
+    font-size: 12pt;
+    height: 550px;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  
+  .services-two li p {
+  
+    padding: 0 40px;
+  }
+  
+  .services-two li h3 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 780px) {
+    .services-three li {
+        width: 100%;
+        float: none;
+        clear: both;
+        display: block;
+    }
+  
+    .owl-gallery {
+        margin-top: 0px!important;
+    }
+  
+    .booknow {
+       width: 100%; display: inline; padding-right: 0px; clear:both; margin: 5px auto;
+    }
+  
+    .booknow img {
+        width: 100%;
+    }
+  
+    #header-booknow {
+        display: none;
+    }
+  
+  
+    .services-two li {
+      width: 100%;
+      float: left;
+      list-style-type: none;
+      float: none;
+      clear: both;
+      display: block;
+      height: auto;
+      padding: 5px;
+    }
+  
+  }
+  
+  .owl-overlay {
+    display: block;
+    z-index: 9999999;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    visibility: visible;
+    
+  
+  }
+  .owl-wrapper {
+    position: relative;
+  }
+  
+  hr {
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 1px 1px rgb(196, 146, 196);
+  }
+  
+  .services-three a img:hover {
+    cursor: inherit;
+  }
+  
