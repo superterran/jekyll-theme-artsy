@@ -134,7 +134,7 @@ body {
   }
   .intro-header {
     background: no-repeat center center;
-    background-color: #808080;
+    background-color: $headercolor;
     background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
