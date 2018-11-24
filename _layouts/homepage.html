@@ -1,4 +1,25 @@
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/home.css" media="screen" /> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include head.html %}
+<link rel="shortcut icon" href="{{ root_url }}/favicon.ico?" type="image/x-icon">
+<link rel="icon" href="{{ root_url }}/favicon.ico?" type="image/x-icon">
+</head>
+
+<body>
+
+
+    {% include nav.html %}
+
+    ---
+layout: home
+main-title: 'Trina is Artsy:'
+subtitle: The Coffee Chronicles
+description: " ✂ ✏ ☕ "
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/css/home.css" media="screen" /> 
 
 <script>
   $('body').addClass('fullscreen')
@@ -115,3 +136,8 @@ color:#dddddd; target="_blank" title="Email">
 <script src="{{ site.baseurl }}/assets/js/jquery.lazylinepainter.min.js"></script>
 <!-- include custom script -->
 <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+
+    </body>
+
+</html>
+
