@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 20px;
-    color: #9c869c;
+    color: $textcolor;
     background-color: #1d1919;
   }
   p {
@@ -22,7 +22,7 @@ body {
     clear: both;
   }
   a {
-    color: #d3a6da;
+    color: $textlink;
     transition: color .4s;
     text-decorarion: none;
   }
@@ -77,14 +77,14 @@ body {
     }
     .navbar-custom .navbar-brand:hover,
     .navbar-custom .navbar-brand:focus {
-      color: #c39aed;
+      color: $texthighlight;
     }
     .navbar-custom .nav li a {
       color: white;
       padding: 20px;
     }
     .navbar-custom .nav li a:hover{
-      color: #c39aed;
+      color: $texthighlight;
     }
   }
   @media only screen and (min-width: 1170px) {
@@ -114,14 +114,14 @@ body {
       color: #ffffff;
     }
     .navbar-custom.is-fixed .navbar-brand:hover {
-      color: #c39aed;
+      color: $texthighlight;
     }
     
     .navbar-custom.is-fixed .nav li a:hover {
-      color: #c39aed;
+      color: $texthighlight;
     }
   .navbar-custom.is-fixed .nav li a:active{
-      color: #c39aed;
+      color: $texthighlight;
     }
     .navbar-custom.is-visible {
       /* if the user changes the scrolling direction, we show the header */
@@ -228,7 +228,7 @@ body {
   .post-preview > a:hover,
   .post-preview > a:focus {
     text-decoration: none;
-    color: #c39aed;
+    color: $texthighlight;
   }
   .post-preview > a > .post-title {
     font-size: 30px;
@@ -252,7 +252,7 @@ body {
   }
   .post-preview > .post-meta > a:hover,
   .post-preview > .post-meta > a:focus {
-    color: #c39aed;
+    color: $texthighlight;
     text-decoration: underline;
   }
   @media only screen and (min-width: 768px) {
@@ -332,7 +332,7 @@ body {
     opacity: 1;
   }
   .floating-label-form-group-with-focus label {
-    color: #c39aed;
+    color: $texthighlight;
   }
   form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eeeeee;
@@ -352,8 +352,8 @@ body {
   }
   .btn-default:hover,
   .btn-default:focus {
-    background-color: #c39aed;
-    border: 1px solid #c39aed;
+    background-color: $texthighlight;
+    border: 1px solid $texthighlight;
     color: white;
   }
   .pager {
@@ -392,12 +392,12 @@ body {
   ::-moz-selection {
     color: white;
     text-shadow: none;
-    background: #c39aed;
+    background: $texthighlight;
   }
   ::selection {
     color: white;
     text-shadow: none;
-    background: #c39aed;
+    background: $texthighlight;
   }
   img::selection {
     color: white;
@@ -408,7 +408,7 @@ body {
     background: transparent;
   }
   body {
-    webkit-tap-highlight-color: #c39aed;
+    webkit-tap-highlight-color: $texthighlight;
   }
   .fa-stack-2x {
    color: black;
