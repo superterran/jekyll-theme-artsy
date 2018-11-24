@@ -5,6 +5,13 @@
 
 This is Artsy, a Jekyll theme that compiles out to a ruby gem. It provides a rough but useful theme for Jekyll sites that includes a gallery, services and a lame ecommerce methodology built around PayPal Buttons. While eventually the goal is for this to be a useful and optimized jekyll theme, at this point its very early and the only real goal is to provide a decoupled theme and asset repositories for my girlfriend that's still compatible with Prose and Netlify. The point is to allow for the theme proper to be publically availble, while letting us track the _content_ in a private repository. This theme is bundled with a thumbnailer that can shrink images and watermark them, the content repo will be a safe home for all of the artist's content and jekyll will only output images that are safe for the web. 
 
+# Releasing the Gem
+
+```
+$ gem build jekyll-theme-artsy.gemspec
+$ gem push jekyll-theme-artsy-0.1.11.gem
+```
+
 # Basics...
 
 To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
