@@ -1,0 +1,8 @@
+#!/bin/bash
+while inotifywait -qqre modify "./"; do
+    echo 'change detected, triggering build...'
+    cd /mnt/d/repos/trina.clean 
+    bundle exec jekyll build
+    cd /mnt/d/repos/artsy
+    echo 'build complete!'
+done 
