@@ -15,12 +15,14 @@ $ gem push jekyll-theme-artsy-0.1.9.gem
 
 ## Local Development
 
-There's some work you just can't do on the web, for this we must build the site locally:
+It's best to build this theme along with the content. There's a watcher that will regenerate the content's installation whenever
+you make changes to the theme. To use it...
 
 ```
-$ bundle install
-$ jekyll serve --watch
+$ bin/watch
 ```
+
+
 ## Thumbnails
 
 Thumbnails of images in art/ are generated to art/thumbs/ during the build process. Images that already exist in art/thumbs are ignored, so you can speed things up a bit by commiting art/thumbs/ from time to time. 
