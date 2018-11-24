@@ -1,0 +1,4 @@
+#!/bin/bash
+gem build jekyll-theme-artsy.gemspec
+gem push $(ls -t *.gem | head -1)
+mv *.gem ./releases
